@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome Messenger",
+  "version": "0.1",
+
+  "description": "Messaging withing chrome",
+ /* "icons": { "16" : "images/icon.png",
+                        "48" : "images/48.png",
+                        "128" : "images/128.png"},*/
+
+    "browser_action": {
+            //  "default_icon": "images/icon.png",
+              "default_title": "Chrome Messenger",
+              "default_popup": "popup.html"
+  },
+
+    "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}

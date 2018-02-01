@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Friends</title>
+<style>
+#myform {
+  margin:0 auto;
+  width:500px;
+  padding:14px;
+}
+
+label {
+  width: 10em;
+  float: left;
+  margin-right: 0.5em;
+  display: block;
+  vertical-align: middle;
+}
+.submit {
+  float:right;
+}
+
+fieldset {
+  background:#EBF4FB none repeat scroll 0 0;
+  border:2px solid #B7DDF2;
+  width: 450px;
+}
+
+legend {
+  color: #fff;
+  background: #80D3E2;
+  border: 1px solid #781351;
+  padding: 2px 6px
+}
+.elements {
+  padding:10px;
+}
+p {
+  border-bottom:1px solid #B7DDF2;
+  color:#666666;
+  font-size:12px;
+  margin-bottom:20px;
+  padding-bottom:10px;
+}
+span {
+  color:#666666;
+  font-size:12px;
+  margin-bottom:1px;
+  
+}
+.btn{
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: 1px solid #B7DDF2;
+  
+}
+
+.btn:hover{
+  color: #333333;
+  background-color: #e6e6e6;
+}
+
+</style>
+<script src="scripts/browserMqtt.js"></script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/friends.js"></script>
+</head>
+
+<body>
+<div id="header">
+<!--  Send Form's data as JSON -->
+</div>
+<span><a id="logout" href="#">logout</a></span>
+<!-- <span><input id="logout" name="btn" class="btn" value="logout" /></span> -->
+<form id="myform" action="">
+  <fieldset>
+    <legend id = "receiver">Friends</legend>
+    <div id = "chats">
+    </div>
+    
+   <!--  <div class="elements">
+      <label for="Username">Username :</label>
+      <input placeholder="Preferably Email"  required="required" type="text"   name="username" />
+    </div>
+    
+     <div class="elements">
+      <label for="Password">Password :</label>
+      <input placeholder="Password"  required="required" type="Password"   name="password" />
+    </div> -->
+    <!-- 
+     <div>
+        <input type="checkbox" style="margin-bottom:15px"> Remember me
+      </div> -->
+   <!--  <legend id = "sender">Type</legend>
+    <textarea id = "sendData" rows="4" cols="50">
+    </textarea>
+    <div class="submit">
+       <input type="Submit" id="btn" name="btn" class="btn" value="Send" />
+    </div> -->
+
+    <pre id="result">
+    </pre>
+  </fieldset>
+</form>
+</body>
+
+</html>
