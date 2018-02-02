@@ -1,4 +1,5 @@
-# PennApps18-Chrome-Messenger
+# Chrome-Messenger
+--- Built at University of Pennsylvania for PennApps18
 
 ##All instructions will go here
 A MQTT based Chat messenger for the Google Chrome Extension bar.
